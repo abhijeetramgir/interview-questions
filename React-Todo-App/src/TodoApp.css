@@ -1,0 +1,93 @@
+#root {
+  position: absolute;
+  width: 500px;
+  top: 20vh;
+  left: calc(50vw - 250px);
+}
+
+.add-todo {
+  margin: 0px 10px 10px 10px;
+}
+
+.add-todo input {
+  width: 200px;
+  height: 36px;
+}
+
+.add-todo form {
+  display: flex;
+  align-items: center;
+}
+
+.add-todo button {
+  margin-left: 20px;
+  background-color: #4caf50;
+  font-size: 18px;
+}
+
+.add-todo button:hover {
+  margin-left: 20px;
+  background-color: #45a049;
+  font-size: 18px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  height: 30px;
+}
+
+.dropdown select {
+  width: 120px;
+}
+
+.todo-list ul {
+  padding: 0px;
+  font-size: 20px;
+  background-color: #f9f9f9;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.list-container .list-item {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 80%;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.list-container .delete-icon {
+  flex: 1;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.delete-icon svg {
+  height: 100%;
+  width: 30px;
+}
+input[type="text"],
+select {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #4caf50;
+}
